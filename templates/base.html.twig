@@ -1,0 +1,186 @@
+{#
+   This is the base template used as the application layout which contains the
+   common elements and decorates all the other templates.
+#}
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+<head>
+    <meta name="norton-safeweb-site-verification"
+          content="1ov-s6ffy9xtthqbzww18q65jmew2r4my7tpr9tmg5lbaj3amda4hkwh5mojyn7n77zflgz572s-v1py-hwnnxwx4cucusl2nyhtwx9bhjd3ajc2bok8vx-bdl01tfur"/>
+    <title>{{ page_title }} | RPS</title>
+    <meta name="description" content="{{ page_description }}">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+          name="viewport">
+    <meta name="fragment" content="!">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--og is so facebook and other sites know what to put in a post-->
+    <meta property="og:site_name" content="OneGoodMeal">
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:description" content="{{ page_description }}">
+    <meta property="og:image" content="{{ page_og_image }}"/>
+    <meta property="og:url" content="{{ url(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }}">
+    <link href="{{ url(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }}" rel="canonical">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="stylesheet" media="screen" href="/css/flow.1.2.css">
+    <link rel="icon" href="/css/cropped-icon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/css/cropped-icon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="/css/cropped-icon-180x180.png">
+    <meta name="msapplication-TileImage" content="/css/cropped-icon-270x270.png">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.min.js"></script>
+    <script type="text/javascript" src="/js/rpsMain1.3.min.js"></script>
+</head>
+
+        {% block header %}
+        <body class="menu-category- {{ page_type }}" style="">
+        <header id="header" class="">
+            <div id="header_content">
+
+                <div id="scrolled_header">
+                    <div id="scrolled_header_product_categories" product-categories=""></div>
+                    <div id="scrolled_header_account_nav" account-nav=""></div>
+                </div>
+
+                <div id="normal_left">
+                    <a href="#nav" id="hamburger" class="nav-toggle">Nav</a>
+                    <a href="/" class="logo" id="logo">RPS Tool</a>
+                    <div class="nav-fanuc"><a href="https://www.fanucamerica.com/" target="_blank"><img src="/images/fanuc-partner.png" /> partner</a> </div>
+                    <nav class="left m-left-xl" id="home_nav">
+                        <a href="applications">APPLICATIONS <span class="nav-icon-spacing">&nbsp;</span></a>
+                        <a href="industries">INDUSTRIES <span class="nav-icon-spacing">&nbsp;</span></a>
+                        <a href="equipment">EQUIPMENT <span class="nav-icon-spacing">&nbsp;</span></a>
+                        <a href="about">ABOUT RPS <span class="nav-icon-spacing">&nbsp;</span></a>
+                        <a href="contactus">CONTACT US<span class="nav-icon-spacing">&nbsp;</span></a>
+                    </nav>
+                </div>
+                <div id="normal_right">
+                    <nav class="right m-right-xl" id="home_nav_right">
+                    </nav>
+                </div>
+                <div id="mobile_nav">
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="applications">APPLICATIONS</a></li>
+                        <li><a href="industries">INDUSTRIES</a></li>
+                        <li><a href="equipment">EQUIPMENT</a></li>
+                        <li><a href="about">ABOUT RPS</a></li>
+                        <li><a href="contactus">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div> <!-- /header_content -->
+
+            <div class="modal-background">
+            </div>
+        </header>
+        {% endblock %}
+
+        <notifications-bar class="notifications" closeicon="close-icon">					<!---->				</notifications-bar>
+
+        <main id="content" class="">
+            <ui-view>
+            {% block body %}
+            {% endblock %}
+
+        {% block footer %}
+            <div class="container">
+            <footer class="v-center" id="contact_us" footer="">
+                <a name="contact_us_section" class="home-anchor"></a>
+                <div class="inner">
+                    <div>
+                        <div ng-if="!wholesaleMode">
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <ul class="nav nav-pills nav-stacked">
+                                        <li role="presentation"><a href="/">Home</a></li>
+                                        <li role="presentation"><a href="../applications">Applications</a></li>
+                                        <li role="presentation"><a href="../industries">Industries</a></li>
+                                        <li role="presentation"><a href="../equipment">Equipment</a></li>
+                                        <li role="presentation"><a href="../about">About RPS</a></li>
+                                        <li role="presentation"><a href="../contactus">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h2>THE RPS WAY</h2>
+                                            <p class="card-instructions">
+                                                RPS Automation is committed to quality engineering. We take pride in producing the best possible products.
+                                            </p>
+                                            <p>ISO 9001:2015 compliant:<span class="break"></span> registration # 2062-QSRD-150287</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div id="social" class="right-2x">
+                                                <a id="facebook_link" target="_blank" href="https://www.facebook.com/" rel="noreferrer">FACEBOOK</a>
+                                                <a id="twitter_link" target="_blank" href="https://twitter.com/" rel="noreferrer">TWITTER</a>
+                                                <a id="instagram_link" target="_blank" href="http://instagram.com/" rel="noreferrer">INSTAGRAM</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row footer-links-md">
+                                <div class="col-md-1 col-sm-4 col-xs-6 text-center"><a href="../contactus">contact</a></div>
+                                <div class="col-md-2 col-sm-4 col-xs-6 text-center"><a href="../about">about RPS</a></div>
+                                <div class="col-md-1 col-sm-4 col-xs-6 text-center"><a href="../contactus">careers</a></div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 text-center">©{{ "now"|date("Y") }} RPS Automation</div>
+                            </div>
+                        </div><!---->
+                    </div>
+                </div>
+                <script>
+                  (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function () {
+                      (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                      m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                  ga('create', 'UA-67516071-1', 'auto');
+                  ga('require', 'linkid', 'linkid.js');
+                  ga('send', 'pageview');
+
+                </script>
+            </footer>
+            </div>
+        {% endblock %}
+            </ui-view>
+        </main>
+        </div>
+        </ui-view>
+        </main>
+        <div class="modal-background">
+        </div>
+    </body>
+</html>

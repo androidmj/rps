@@ -1,0 +1,14 @@
+.red {
+	color: red !important
+}
+.typeahead {
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden
+}
+.handserror {
+	background-color: #FA5858 !important;
+	color: #fff
+}
+
+#dataTable{font-size:11px}

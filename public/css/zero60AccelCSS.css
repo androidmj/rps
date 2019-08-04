@@ -1,0 +1,32 @@
+.red {
+	color: red
+}
+.typeahead {
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden
+}
+.handserror {
+	background-color: #FA5858 !important;
+	color: #fff
+}
+.ui-autocomplete {
+	max-height: 100px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+}
+
+* html .ui-autocomplete {
+	height: 100px;
+}
+.zero60Chart{
+	display:inline-block;
+	margin:10px;
+}
+#zero60Accel{
+	text-align:center;
+}
+.wtHider{
+	margin:auto;
+}

@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="contact-header">
+        <div class="container">
+            <div class="col-sm-8">
+                <div class="flexslider flexplaceholder placeholder-colorfix" style="direction:ltr">
+                    <ul class="slides">
+                        <li>
+                            <video autoplay muted loop width="100%" poster="images/assembly_poster.jpg">
+                                <source src="video/assembly.mp4" type="video/mp4">
+                                <source src="video/assembly.ogv" type="video/ogg">
+                                <source src="video/assembly.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                        </li>
+{#                        <li>#}
+{#                            <img src="images/mold0.jpg" />#}
+{#                        </li>#}
+{#                        <li>#}
+{#                            <img src="images/tinygif.gif" data-src="images/mold1.jpg" />#}
+{#                        </li>#}
+{#                        <li>#}
+{#                            <img src="images/tinygif.gif" data-src="images/mold2.jpg" />#}
+{#                        </li>#}
+
+                    </ul>
+                </div>
+            </div>
+            <div class="post-content col-sm-4">
+                <h1>Applications</h1>
+                <ul style="font-size:20px">
+                    <li>Secondary Equipment</li>
+                    <li>Assembly</li>
+                    <li>Integration</li>
+                    <li>Robotics</li>
+                </ul><p>
+
+{#                    <br><br>RPS implements continuous investment into our CNC technologies. Currently, we run 12 state-of-the-art high#}
+{#                    performance 3 axis CNC machines that can handle spindle speeds up to 12,000 rpm.#}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

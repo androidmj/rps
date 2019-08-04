@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="contact-header">
+        <div class="container">
+            <div class="col-sm-8">
+                <h1>Contact Us</h1>
+                <p>Service: <a style="text-decoration: underline;" href="mailto:sales@rps-auto.com">service@rps-auto.com</a></p>
+                <p>Sales: <a style="text-decoration: underline;" href="mailto:sales@rps-auto.com">sales@rps-auto.com</a></p>
+                <p>RFQ Upload: <a style="text-decoration: underline;" href="https://www.dropbox.com/request/y7WjJpCif5umeVtD8xpc"><svg style="width:20px" alt="" class="u01-header__logo-img u01-header__logo-img--glyph" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M29.096 16.144l8.97 5.715-9.033 5.754-9.026-5.75-9.026 5.75-9.033-5.754 8.97-5.715-8.97-5.714 9.033-5.755 9.026 5.75 9.026-5.75 9.033 5.755-8.97 5.714zm-.126 0l-8.963-5.71-8.963 5.71 8.963 5.71 8.963-5.71zM11.039 29.52l9.033-5.754 9.033 5.754-9.033 5.755-9.033-5.755z" fill="#0061FF" fill-rule="evenodd"></path></svg><img style="height: 30px;" src="images/dropbox.svg" /></a></p>
+
+                <p>Employment: <a style="text-decoration: underline;" href="mailto:sales@rps-auto.com">employment@rps-auto.com</a></p>
+                <p style="padding-top:10px">
+                    16149 Common Rd
+                    <br>
+                    Roseville, MI 48066-1813
+                    <br>
+                    <a style="text-decoration: underline;" href="tel:586-298-6590">(586) 298-6590</a><br>
+                    <br>
+                    Mon – Fri 8:00am – 4:30pm
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <hr class="visible-xs">
+                <h3>Please fill out the form below to send us a message.</h3>
+                <form name="contactForm" class="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="FULL NAME" class="form-control" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email2" name="email2" placeholder="EMAIL" class="form-control" required="">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="comments" rows="6" placeholder="COMMENTS" required="" maxlength="2000"></textarea>
+                    </div>
+                    <div class="form-group message" style="display: none">
+                        Something went wrong, please try again.
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">Contact Us</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

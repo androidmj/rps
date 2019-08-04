@@ -1,0 +1,12 @@
+.red {
+	color: red
+}
+.typeahead {
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden
+}
+.handserror {
+	background-color: #FA5858 !important;
+	color: #fff
+}

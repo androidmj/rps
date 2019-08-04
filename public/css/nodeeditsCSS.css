@@ -1,0 +1,36 @@
+.red {
+	color: red !important
+}
+.purple {
+	color: purple !important
+}
+.blue {
+	color: #205199 !important
+}
+.green {
+	color: #00BB00 !important
+}
+.typeahead {
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden
+}
+.handserror {
+	background-color: #FA5858 !important;
+	color: #fff
+}
+
+#dataTable{font-size:12px}
+#searchgrid{width:600px}
+
+#watcherDialog{font-size:11px;text-align:right; height:700px;}
+#sickBayDialog{font-size:11px;text-align:right; height:700px;}
+div.ui-tooltip{max-width:800px !important;}
+.nodeCommands,.getHistory,.connectToNode,.markInactive,.nodeStatus,.flashVNA,.genBut{font-size:14px;padding:1px 2px;color:#FFF !important}
+
+.handsontable tr:not(.onRow){color:#777777}
+
+.onRow * {
+	color:#205199;
+	background-color:#dddddd !important;
+}
