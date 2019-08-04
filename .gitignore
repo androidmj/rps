@@ -30,3 +30,4 @@ yarn-error.log
 ###< symfony/webpack-encore-bundle ###
 /.idea
 src/Includes/Settings.php
+/src/Includes/Settings.php
