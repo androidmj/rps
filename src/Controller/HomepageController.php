@@ -49,7 +49,7 @@ class HomepageController extends BaseController
             'button_color' => 'btn-yellow',
             'background_image' => 'images/fanuc-scara.jpg');
 
-        $render_data['hero_data'][] = array('h1'=>'ndustrial Robots for Manufacturing',
+        $render_data['hero_data'][] = array('h1'=>'Industrial Robots for Manufacturing',
             'h2' => 'Versatility, reliability and world-renowned performance - we use robots that provide manufacturers worldwide with the productivity they need to improve performance and profitability',
             'link' => '/about',
             'link_text' => 'Get More with RPS',
