@@ -6,6 +6,7 @@ use App\Entity\Comment;
 use App\Entity\Post;
 use App\Events\CommentCreatedEvent;
 use App\Form\CommentType;
+use App\Model\IndustriesModel;
 use App\Repository\PostRepository;
 use App\Repository\TagRepository;
 use App\Includes\MainHead;
@@ -33,16 +34,9 @@ class IndustriesController extends BaseController
      */
     public function index(): Response
     {
-        // Every template name also has two extensions that specify the format and
-        // engine for that template.
+        $model = new IndustriesModel();
+        $model->load();
 
-        $main_head = new MainHead('industries');
-
-        $render_data['page_type'] = 'industries';
-        $render_data['page_title'] = $main_head->title;
-        $render_data['page_description'] = $main_head->description;
-        $render_data['page_og_image'] = $main_head->og_image;
-
-        return $this->render('default/industries.html.twig', $render_data);
+        return $this->render('default/industries.html.twig', $model->get_render_data());
     }
 }

@@ -7,6 +7,7 @@ use App\Entity\Comment;
 use App\Entity\Post;
 use App\Events\CommentCreatedEvent;
 use App\Form\CommentType;
+use App\Model\AboutModel;
 use App\Repository\PostRepository;
 use App\Repository\TagRepository;
 use App\Includes\MainHead;
@@ -34,13 +35,9 @@ class AboutController extends BaseController
      */
     public function index(): Response
     {
-        $main_head = new MainHead('about');
+        $model = new AboutModel();
+        $model->load();
 
-        $render_data['page_type'] = 'about';
-        $render_data['page_title'] = $main_head->title;
-        $render_data['page_description'] = $main_head->description;
-        $render_data['page_og_image'] = $main_head->og_image;
-
-        return $this->render('default/about.html.twig', $render_data);
+        return $this->render('default/about.html.twig', $model->get_render_data());
     }
 }

@@ -6,6 +6,7 @@ use App\Entity\Comment;
 use App\Entity\Post;
 use App\Events\CommentCreatedEvent;
 use App\Form\CommentType;
+use App\Model\EquipmentModel;
 use App\Repository\PostRepository;
 use App\Repository\TagRepository;
 use App\Includes\MainHead;
@@ -32,13 +33,9 @@ class EquipmentController extends BaseController
      */
     public function index(): Response
     {
-        $main_head = new MainHead('equipment');
+        $model = new EquipmentModel();
+        $model->load();
 
-        $render_data['page_type'] = 'equipment';
-        $render_data['page_title'] = $main_head->title;
-        $render_data['page_description'] = $main_head->description;
-        $render_data['page_og_image'] = $main_head->og_image;
-
-        return $this->render('default/equipment.html.twig', $render_data);
+        return $this->render('default/equipment.html.twig', $model->get_render_data());
     }
 }
