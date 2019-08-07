@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Includes\MainHead;
+use App\Model\ContactModel;
 use Mailjet\Client;
 use Mailjet\Resources;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -17,10 +18,10 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 /**
  * Controller used to manage rps contents in the public part of the site.
  *
- * @Route("/contactus")
+ * @Route("/contact")
  *
  */
-class ContactUsController extends BaseController
+class ContactController extends BaseController
 {
     /**
      * @Route("", defaults={"page": "1", "_format"="html"}, methods={"GET"}, name="rps_contact_us")
@@ -28,14 +29,10 @@ class ContactUsController extends BaseController
      */
     public function index(): Response
     {
-        $main_head = new MainHead('contactus');
+        $model = new ContactModel();
+        $model->load();
 
-        $render_data['page_type'] = 'contactus';
-        $render_data['page_title'] = $main_head->title;
-        $render_data['page_description'] = $main_head->description;
-        $render_data['page_og_image'] = $main_head->og_image;
-
-        return $this->render('default/contactus.html.twig', $render_data);
+        return $this->render('default/contact.html.twig', $model->get_render_data());
     }
 
     /**
@@ -67,7 +64,7 @@ class ContactUsController extends BaseController
                     'Subject' => 'RPS message from ' . $name,
                     'TextPart' => $comment,
                     'HTMLPart' => $comment . '<br /><br />Contact info:<br />' . $name . '<br />' . $email2,
-                    'CustomID' => 'ContactUsPage'
+                    'CustomID' => 'contactPage'
                 ]
             ]
         ];

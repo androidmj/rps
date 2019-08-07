@@ -1341,7 +1341,7 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857;
   color: #111;
   background-color: #fff
@@ -12325,13 +12325,12 @@ body.about .careers .about-photos .photo1 {
   content: url(//d2eoaatx2duo6e.cloudfront.net/assets/about/photo1-e5de8e4581484adee573327c9519242f1c7483bb075d827db9b50e865a0844c0.png)
 }
 
-body.cannabis_institute {
+body.base {
   padding-top: 50px;
-  font-family: PredigeRounded-Regular, helvetica, sans-serif;
   font-family: PredigeRounded-Light, helvetica, sans-serif
 }
 
-body.cannabis_institute main#content {
+body.base main#content {
   max-width: 100%;
   padding-left: 0;
   padding-right: 0;
@@ -12339,321 +12338,7 @@ body.cannabis_institute main#content {
   margin-right: 0
 }
 
-body.cannabis_institute .cannabis-institute-header {
-  width: 100%;
-  background: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/v2-bg-header2-aad54d569784ef1c592924c7fa48367ca731a7d1ba393add7bb4117ee404e0e8.jpg) center center no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  color: white;
-  padding: 70px 10%;
-  text-align: center;
-  content: '';
-  display: block
-}
-
-body.cannabis_institute .cannabis-institute-header .hero__play-button {
-  padding: 40px 0px 18px 0px;
-  left: auto;
-  right: auto;
-  margin: 0 auto
-}
-
-body.cannabis_institute .cannabis-institute-header .logo-fci {
-  height: 80px;
-  width: 120px;
-  background: url(/images/logow.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  content: '';
-  display: block;
-  margin: 0 auto 22px
-}
-
-@media only screen and (min-width: 992px) {
-  body.cannabis_institute .cannabis-institute-header .logo-fci {
-    height: 195px
-  }
-}
-
-body.cannabis_institute .cannabis-institute-header h1 {
-  font-family: PredigeRounded-Regular, helvetica, sans-serif;
-  font-size: 40px;
-  margin-bottom: 0;
-  line-height: 1em
-}
-
-body.cannabis_institute .cannabis-institute-header h2 {
-  font-size: 20px;
-  font-family: PredigeRounded-Light, helvetica, sans-serif;
-  color: white;
-  margin-bottom: 0px;
-  padding-top: 10px;
-  margin-top: 0
-}
-
-body.cannabis_institute .container.main {
-  margin-top: 53px;
-  padding: 0 10%
-}
-
-body.cannabis_institute .container.main h3 {
-  font-size: 30px;
-  font-family: PredigeRounded-Regular, helvetica, sans-serif;
-  margin-bottom: 12px;
-  margin-top: 10px
-}
-
-body.cannabis_institute .container.main p {
-  font-size: 20px;
-  line-height: 1.5em;
-  font-family: PredigeRounded-Light, helvetica, sans-serif;
-  text-align: justify
-}
-
-body.cannabis_institute .container.main .institute-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap
-}
-
-body.cannabis_institute .container.main .institute-section:before, body.cannabis_institute .container.main .institute-section:after {
-  content: normal
-}
-
-body.cannabis_institute .container.main .institute-section .institute-info {
-  flex: 4;
-  width: 100%
-}
-
-body.cannabis_institute .container.main .institute-section .institute-image {
-  display: flex;
-  width: 100%;
-  padding: 33px 0 0;
-  justify-content: center
-}
-
-body.cannabis_institute .container.main #mikey-quote {
-  position: relative;
-  margin: 0 auto;
-  width: 80%;
-  margin: 100px auto;
-  text-align: center;
-  font-size: 110%
-}
-
-body.cannabis_institute .container.main #mikey-quote .big-quote {
-  font-size: 200%;
-  font-weight: bold;
-  display: inline-block
-}
-
-body.cannabis_institute .container.main #mikey-quote .big-quote:last-child {
-  vertical-align: bottom;
-  margin-left: 8px
-}
-
-body.cannabis_institute .container.main #mikey-quote .big-quote:first-child {
-  position: absolute;
-  left: -20px
-}
-
-body.cannabis_institute .container.main #mikey-quote .mikey-profile {
-  width: 128px;
-  height: 128px;
-  background-size: 100%;
-  display: block;
-  margin: 0 auto;
-  background: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/mikey-aece3cfc4cb36c2c95a4615ae131e494d45a5b294e67466c3be6217e177b8d84.png);
-  background-repeat: no-repeat
-}
-
-body.cannabis_institute .container.main #mikey-quote .line {
-  width: 100%;
-  display: flex;
-  height: 50px;
-  margin-top: 30px
-}
-
-body.cannabis_institute .container.main #mikey-quote .line div {
-  display: inline-block;
-  flex: 1;
-  height: 100%
-}
-
-body.cannabis_institute .container.main #mikey-quote .line div:first-child {
-  border-right: 2px solid grey
-}
-
-body.cannabis_institute .container.main #mikey-quote .line div:last-child {
-  border-left: 2px solid grey
-}
-
-body.cannabis_institute .container.main #mikey-quote h6 {
-  font-weight: bold;
-  font-size: 20px
-}
-
-body.cannabis_institute .container.main #mikey-quote em {
-  font-weight: bold;
-  color: #A3A3A3
-}
-
-body.cannabis_institute .container.main hr {
-  margin: 33px 0px
-}
-
-body.cannabis_institute .container.main div.processing {
-  width: 210px;
-  height: 210px;
-  background-size: 100%;
-  background: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/v2-processing-2708e916b613ec3750529af05d4e9c840572858230bc4dbf2101e7ce232d7b3c.png);
-  content: '';
-  display: block
-}
-
-body.cannabis_institute .container.main div.education {
-  width: 210px;
-  height: 210px;
-  background-size: 100%;
-  background: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/v2-education-fbba7e197fa9925fa14feb8d540e12b67582be3791d286e799df591fee21bdc1.png);
-  content: '';
-  display: block
-}
-
-body.cannabis_institute .container.main div.leisure {
-  width: 210px;
-  height: 210px;
-  background-size: 100%;
-  background: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/v2-leisure-3bdcb7ef43bb7ae503f68b016abfc8898a4bbbda8876fb8d5fa04f31c4efcb55.png);
-  content: '';
-  display: block
-}
-
-body.cannabis_institute .container.main .col-md-4.text-center {
-  padding-top: 30px
-}
-
-@media only screen and (max-width: 768px) {
-  body.cannabis_institute .container.main .col-md-4.text-center .btn {
-    min-width: 100%
-  }
-}
-
-body.cannabis_institute .container.main .bait-footer {
-  text-align: center;
-  padding: 40px 0px 55px 0px
-}
-
-body.cannabis_institute .container.main .bait-footer h1 {
-  font-size: 40px;
-  font-family: PredigeRounded-Regular, helvetica, sans-serif;
-  margin-bottom: 55px
-}
-
-body.cannabis_institute .logos {
-  padding: 40px 0px 50px 0px
-}
-
-body.cannabis_institute img.logo-poseidon {
-  content: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/logo-poseidon-7c1ef6b9b22d8693cc5a69c743ef3fbd94d738707f753d7433f72e5db1b2a41f.png);
-  width: 73.5px
-}
-
-body.cannabis_institute img.logo-silkin {
-  content: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/logo-silkin-18bdd5c273a9b94efc6ea97fde06e5f6c75a62b2a0ff2407d82c7ac3ce5ddfca.png);
-  width: 105px
-}
-
-body.cannabis_institute img.logo-arcanna {
-  content: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/logo-arcanna-8954fbb64122e6f2073d3888487bdad967d85d917f5ddf178306cc8abb436dc9.png);
-  width: 80px
-}
-
-body.cannabis_institute img.logo-emerald {
-  content: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/logo-emerald-e4d4ed288968b324bdf7bdbca4ed423d96687a9dafe91d11b0350219c4492fe6.png);
-  width: 55px
-}
-
-body.cannabis_institute img.logo-caliland {
-  content: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/logo-caliland-e991ecea551701f4ce39c2f8a87b799111a3457ab5420f9a3f54f03a0de6ded5.png);
-  width: 100px
-}
-
-body.cannabis_institute img.logo-coda {
-  content: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/logo-coda-fb9dd4be9c5d5f25e2ac054bef1486156d06a40ece653f2da067d706ccbbf15c.png);
-  width: 83px
-}
-
-body.cannabis_institute img.logo-artifact {
-  content: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/logo-artifact-429cf60672cf2f94a3aaaf3ccf7f905f0508976dd306025ddca35eae19f6f445.png);
-  width: 61px
-}
-
-body.cannabis_institute .p-form {
-  padding: 50px 0px;
-  background-color: #f9f9f9
-}
-
-body.cannabis_institute .p-form h3 {
-  font-size: 40px;
-  font-family: PredigeRounded-Medium, helvetica, sans-serif;
-  margin-bottom: 20px
-}
-
-body.cannabis_institute .p-form p {
-  font-size: 24px;
-  font-family: PredigeRounded-Light, helvetica, sans-serif;
-  line-height: 1.5em;
-  margin: 0px 10% 40px 10%
-}
-
-body.cannabis_institute .p-form .btn-primary {
-  padding: 12px 6px 8px 6px
-}
-
-body.cannabis_institute form[name="bmeForm"] .btn-primary {
-  width: 100%
-}
-
-body.cannabis_institute .lc-form {
-  padding: 50px 0px 10px 0px
-}
-
-body.cannabis_institute .lc-form .fc-logo {
-  height: 39px;
-  width: 152px;
-  content: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/fc-logo-sm-3be550eacda1b072548d09d5252014e92c4271149d8fc6cccfaf44dd56e14db8.png)
-}
-
-body.cannabis_institute .lc-form p {
-  padding: 0px;
-  text-align: center !important
-}
-
-body.cannabis_institute .lc-form h2 {
-  margin-top: 40px;
-  margin-bottom: 12px;
-  color: #2d2d2d;
-  font-size: 20px;
-  font-family: PredigeRounded-Medium, helvetica, sans-serif
-}
-
-body.contact {
-  padding-top: 50px;
-  font-family: PredigeRounded-Light, helvetica, sans-serif
-}
-
-body.contact main#content {
-  max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0
-}
-
-body.contact .contact-header {
+body.base .contact-header {
   width: 100%;
   background-color: #f9f9f9;
   padding-top: 10px;
@@ -12661,36 +12346,36 @@ body.contact .contact-header {
   margin-bottom: 12px
 }
 
-body.contact .contact-header h1 {
+body.base .contact-header h1 {
   font-family: PredigeRounded-Regular, helvetica, sans-serif;
   font-size: 40px;
   margin-bottom: 25px
 }
 
-body.contact .contact-header h2 {
+body.base .contact-header h2 {
   font-family: PredigeRounded-Regular, helvetica, sans-serif;
   font-size: 30px;
   margin-top: 32px;
   margin-bottom: 20px
 }
 
-body.contact .contact-header h3 {
+body.base .contact-header h3 {
   font-family: PredigeRounded-Regular, helvetica, sans-serif;
   font-size: 20px;
   margin-bottom: 25px
 }
 
-body.contact .contact-header p {
+body.base .contact-header p {
   font-family: PredigeRounded-Light, helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.5em
 }
 
-body.contact .contact-header hr {
+body.base .contact-header hr {
   margin: 60px 0px
 }
 
-body.contact .contact-header .btn-primary {
+body.base .contact-header .btn-primary {
   padding: 14px 0px 10px 0px;
   text-transform: uppercase;
   width: 100%;
@@ -18898,147 +18583,13 @@ body.show-wsuob .mobile-overlay {
     content: url(//d2eoaatx2duo6e.cloudfront.net/assets/about/photo3-bb6ff2e877268084765239dac57297f93a57a4aa9258023573a36540f840379b.png)
   }
 
-  body.cannabis_institute {
-    padding-top: 50px;
-    font-family: PredigeRounded-Light, helvetica, sans-serif
-  }
-
-  body.cannabis_institute main#content {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0
-  }
-
-  body.cannabis_institute .cannabis-institute-header {
-    width: 100%;
-    background: url(//d2eoaatx2duo6e.cloudfront.net/assets/cannabis_institute/v2-bg-header2-aad54d569784ef1c592924c7fa48367ca731a7d1ba393add7bb4117ee404e0e8.jpg) center center no-repeat;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    color: white;
-    padding: 70px 0;
-    text-align: center
-  }
-
-  body.cannabis_institute .cannabis-institute-header .logo-fci {
-    width: 195px;
-    height: 120px;
-    background: url(/images/logow.svg);
-    content: '';
-    background-size: 100%;
-    display: block;
-    margin-bottom: 15px
-  }
-
-  body.cannabis_institute .cannabis-institute-header h1 {
-    font-size: 70px
-  }
-
-  body.cannabis_institute .cannabis-institute-header h2 {
-    font-size: 40px;
-    font-family: PredigeRounded-Light, helvetica, sans-serif;
-    color: white;
-    margin-bottom: 0px
-  }
-
-  body.cannabis_institute .cannabis-institute-header i.fa-chevron-down {
-    font-size: 27px;
-    margin-top: 470px
-  }
-
-  body.cannabis_institute .institute-section .institute-info {
-    margin-right: 30px
-  }
-
-  body.cannabis_institute .institute-section .institute-image.institute-image {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center
-  }
-
-  body.cannabis_institute .container.main {
-    margin-top: 70px
-  }
-
-  body.cannabis_institute .container.main h3 {
-    font-size: 40px;
-    font-family: PredigeRounded-Regular, helvetica, sans-serif;
-    margin-bottom: 30px;
-    margin-top: 10px
-  }
-
-  body.cannabis_institute .container.main p {
-    font-size: 22px;
-    font-family: PredigeRounded-Light, helvetica, sans-serif
-  }
-
-  body.cannabis_institute .container.main hr {
-    margin: 18px 0px
-  }
-
-  body.cannabis_institute .container.main .col-md-4.text-center {
-    padding-top: 50px;
-    text-align: right
-  }
-
-  body.cannabis_institute .container.main .bait-footer {
-    text-align: center;
-    padding: 85px 0px 70px 0px
-  }
-
-  body.cannabis_institute .container.main .bait-footer h1 {
-    font-size: 60px;
-    font-family: PredigeRounded-Regular, helvetica, sans-serif;
-    margin-bottom: 40px
-  }
-
-  body.cannabis_institute .logos {
-    padding: 60px 0px 50px 0px
-  }
-
-  body.cannabis_institute .p-form {
-    padding: 100px 0px
-  }
-
-  body.cannabis_institute .p-form h3 {
-    font-size: 60px;
-    margin-bottom: 40px
-  }
-
-  body.cannabis_institute .p-form p {
-    font-size: 24px;
-    line-height: 1.5em;
-    margin: 0px 10% 40px 10%
-  }
-
-  body.cannabis_institute .p-form .btn-primary {
-    width: 140px
-  }
-
-  body.cannabis_institute .lc-form {
-    padding: 60px 0px
-  }
-
-  body.cannabis_institute .lc-form p {
-    padding: 0px 10%
-  }
-
-  body.cannabis_institute .lc-form h2 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 22px
-  }
 
   body.contact {
     padding-top: 50px;
     font-family: PredigeRounded-Light, helvetica, sans-serif
   }
 
-  body.contact main#content {
+  body.base main#content {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -19046,7 +18597,7 @@ body.show-wsuob .mobile-overlay {
     margin-right: 0
   }
 
-  body.contact .contact-header {
+  body.base .contact-header {
     width: 100%;
     background-color: #f9f9f9;
     padding-top: 10px;
@@ -19054,32 +18605,32 @@ body.show-wsuob .mobile-overlay {
     margin-bottom: 12px
   }
 
-  body.contact .contact-header h1 {
+  body.base .contact-header h1 {
     font-family: PredigeRounded-Regular, helvetica, sans-serif;
     /*font-size: 60px;*/
     margin-bottom: 20px
   }
 
-  body.contact .contact-header h2 {
+  body.base .contact-header h2 {
     font-family: PredigeRounded-Regular, helvetica, sans-serif;
     font-size: 30px;
     margin-top: 28px;
     margin-bottom: 20px
   }
 
-  body.contact .contact-header h3 {
+  body.base .contact-header h3 {
     font-family: PredigeRounded-Regular, helvetica, sans-serif;
     font-size: 22px;
     margin-bottom: 22px
   }
 
-  body.contact .contact-header p {
+  body.base .contact-header p {
     font-family: PredigeRounded-Light, helvetica, sans-serif;
     /*font-size: 22px;*/
     line-height: 1.5em
   }
 
-  body.contact .contact-header .btn-primary {
+  body.base .contact-header .btn-primary {
     padding: 14px 0px 10px 0px;
     text-transform: uppercase;
     width: 155px;

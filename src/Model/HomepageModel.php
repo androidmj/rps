@@ -21,6 +21,9 @@ class HomepageModel extends BaseModel
     public function load(){
         $this->load_head('home');
 
+        /*
+         * todo: add info to database
+         */
         $this->render_data['hero_data'][] = array('h1'=>'Secondary Equipment, Cobots, Assembly, Integration, and Robotics',
             'h2' => 'From seasoned workers who take pride<br>in producing the best product possible.',
             'link' => '/about',

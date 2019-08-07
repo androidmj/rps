@@ -34,6 +34,11 @@ class MainHead
     public $page_type = '';
 
     /*
+    * @var string body class
+    */
+    public $page_body_class = 'base';
+
+    /*
     * @var array data needed to render the head
     */
     public $render_data = [];
@@ -48,6 +53,7 @@ class MainHead
     switch ($this->page_type) {
       case 'home':
         $this->title = 'RPS Automation';
+        $this->page_body_class = $this->page_type;
         $this->og_image = $this->url . '/images/cobots-banner.png';
         $this->description = $home_description;
         break;
@@ -66,11 +72,11 @@ class MainHead
         $this->url .= '/applications';
         break;
 
-      case 'contactus':
+      case 'contact':
         $this->title = 'Contact Us';
         $this->og_image = $this->url . '/images/cobots-banner.png';
         $this->description = $home_description;
-        $this->url .= '/contactus';
+        $this->url .= '/contact';
         break;
 
       case 'industries':
@@ -97,6 +103,7 @@ class MainHead
 
   public function get_render_data(){
       $this->render_data['page_type'] = $this->page_type;
+      $this->render_data['page_body_class'] = $this->page_body_class;
       $this->render_data['page_title'] = $this->title;
       $this->render_data['page_description'] = $this->description;
       $this->render_data['page_og_image'] = $this->og_image;

@@ -34,7 +34,7 @@ $(document).ready(function () {
 
     let url = '/ajax/send_message';
 
-    fetch('/contactus/send_message',{
+    fetch('/contact/send_message',{
       method: 'POST',
       body: new URLSearchParams(new FormData(form[0]))
     })

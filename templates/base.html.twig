@@ -46,7 +46,7 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-    <link rel="stylesheet" media="screen" href="/css/flow.1.2.css">
+    <link rel="stylesheet" media="screen" href="/css/flow.1.3.min.css">
     <link rel="icon" href="/css/cropped-icon-32x32.png" sizes="32x32">
     <link rel="icon" href="/css/cropped-icon-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon-precomposed" href="/css/cropped-icon-180x180.png">
@@ -54,11 +54,11 @@
     <link rel="preconnect" href="https://www.google-analytics.com">
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery.flexslider.min.js"></script>
-    <script type="text/javascript" src="/js/rpsMain1.3.min.js"></script>
+    <script type="text/javascript" src="/js/rpsMain1.4.min.js"></script>
 </head>
 
         {% block header %}
-        <body class="menu-category- {{ page_type }}" style="">
+        <body class="menu-category- {{ page_body_class }}" style="">
         <header id="header" class="">
             <div id="header_content">
 
@@ -76,7 +76,7 @@
                         <a href="industries">INDUSTRIES <span class="nav-icon-spacing">&nbsp;</span></a>
                         <a href="equipment">EQUIPMENT <span class="nav-icon-spacing">&nbsp;</span></a>
                         <a href="about">ABOUT RPS <span class="nav-icon-spacing">&nbsp;</span></a>
-                        <a href="contactus">CONTACT US<span class="nav-icon-spacing">&nbsp;</span></a>
+                        <a href="contact">CONTACT US<span class="nav-icon-spacing">&nbsp;</span></a>
                     </nav>
                 </div>
                 <div id="normal_right">
@@ -90,7 +90,7 @@
                         <li><a href="industries">INDUSTRIES</a></li>
                         <li><a href="equipment">EQUIPMENT</a></li>
                         <li><a href="about">ABOUT RPS</a></li>
-                        <li><a href="contactus">CONTACT US</a></li>
+                        <li><a href="contact">CONTACT US</a></li>
                     </ul>
                 </div>
             </div> <!-- /header_content -->
@@ -123,7 +123,7 @@
                                         <li role="presentation"><a href="../industries">Industries</a></li>
                                         <li role="presentation"><a href="../equipment">Equipment</a></li>
                                         <li role="presentation"><a href="../about">About RPS</a></li>
-                                        <li role="presentation"><a href="../contactus">Contact Us</a></li>
+                                        <li role="presentation"><a href="../contact">Contact Us</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-10">
@@ -137,18 +137,18 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div id="social" class="right-2x">
-                                                <a id="facebook_link" target="_blank" href="https://www.facebook.com/" rel="noreferrer">FACEBOOK</a>
-                                                <a id="twitter_link" target="_blank" href="https://twitter.com/" rel="noreferrer">TWITTER</a>
-                                                <a id="instagram_link" target="_blank" href="http://instagram.com/" rel="noreferrer">INSTAGRAM</a>
+                                                <a id="facebook_link" target="" href="#facebook_link" rel="noreferrer">FACEBOOK</a>
+                                                <a id="twitter_link" target="" href="#twitter_link" rel="noreferrer">TWITTER</a>
+                                                <a id="instagram_link" target="" href="#instagram_link" rel="noreferrer">INSTAGRAM</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row footer-links-md">
-                                <div class="col-md-1 col-sm-4 col-xs-6 text-center"><a href="../contactus">contact</a></div>
+                                <div class="col-md-1 col-sm-4 col-xs-6 text-center"><a href="../contact">contact</a></div>
                                 <div class="col-md-2 col-sm-4 col-xs-6 text-center"><a href="../about">about RPS</a></div>
-                                <div class="col-md-1 col-sm-4 col-xs-6 text-center"><a href="../contactus">careers</a></div>
+                                <div class="col-md-1 col-sm-4 col-xs-6 text-center"><a href="../contact">careers</a></div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 text-center">©{{ "now"|date("Y") }} RPS Automation</div>
                             </div>
                         </div><!---->
