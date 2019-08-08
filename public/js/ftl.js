@@ -1,1 +1,0 @@
-window._W=window.Weebly=window.Weebly||{},_W.userLang="en",_W.tl=function(n){return n},_W.tli=function(n){return n};

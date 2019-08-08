@@ -1,1 +1,0 @@
-$(document).ready(function(){$(document).on("click","#hamburger",function(a){$("body").toggleClass("mobile-nav-open")});$(".flexslider").flexslider({animation:"slide",rtl:!0})});$(document).ready(function(){$(document).on("click","#hamburger",function(a){$("body").toggleClass("mobile-nav-open")});$(".flexslider").flexslider({animation:"slide",rtl:!0})});
