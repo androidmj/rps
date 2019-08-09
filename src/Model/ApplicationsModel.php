@@ -14,7 +14,7 @@ class ApplicationsModel extends BaseModel
     protected $render_data = [];
 
     /**
-     * Check for valid floor
+     * Model load function
      *
      * @return void
      */

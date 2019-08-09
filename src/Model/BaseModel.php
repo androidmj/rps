@@ -16,7 +16,7 @@ class BaseModel
     protected $render_data = [];
 
     /**
-     * Check for valid floor
+     * Model load function
      *
      * @param string page type
      *
