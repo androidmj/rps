@@ -28,7 +28,7 @@
     "google-closure-compiler": "^20190709.0.0",
     "precompress": "^5.0.2",
     "webpack": "^4.39.1",
-    "yarn": "^1.17.3",
+    "yarn": "^1.22.0",
     "yuicompressor": "^2.4.8"
   }
 }
