@@ -21,7 +21,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * Controller used to manage rps contents in the public part of the site.
+ * Controller used to manage xps contents in the public part of the site.
  *
  * @Route("/about")
  *
@@ -29,7 +29,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AboutController extends BaseController
 {
     /**
-     * @Route("", defaults={"page": "1", "_format"="html"}, methods={"GET"}, name="rps_about")
+     * @Route("", defaults={"page": "1", "_format"="html"}, methods={"GET"}, name="xps_about")
      * @Cache(smaxage="10")
      *
      */

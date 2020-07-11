@@ -13,7 +13,7 @@ class HeaderSettings
   const CONTACT_ID      = '652475320528800246';
   const LOGIN_ID        = '098780798789700798';
   const MY_ACCOUNT_ID   = '098734538789700444';
-  const MAIN_URL        = 'https://www.rps-auto.com';
+  const MAIN_URL        = 'https://www.xpsauto.com';
 
   private static $instance;
 

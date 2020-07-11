@@ -52,7 +52,7 @@ class ContactController extends BaseController
             'Messages' => [
                 [
                     'From' => [
-                        'Email' => 'noreply@rps-auto.com',
+                        'Email' => 'noreply@xpsauto.com',
                         'Name' => 'RPS Automation'
                     ],
                     'To' => [
